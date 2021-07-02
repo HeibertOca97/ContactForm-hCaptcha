@@ -6,5 +6,5 @@ Cabe mencionar que para probar este trabajo deberas:
 - Al tener una cuenta en hcaptcha podras utilizar las sus variables (secret, sitiekey, endpoint) que son necesarias.
 - Ingresa tus datos de tu cuenta en el archivo .env.example y completa las variables de entorno.
 - Reemplazar .env.example por .env
-- Por ultimo deberas ejecutar en tu consolar composer install para que se instalen las dependencia del proyecto
-- Solamente tiene el paquete vlucas/phpdotenv 
+- Deberas ejecutar en tu consolar composer install para que se instalen las dependencia del proyecto (Solamente tiene el paquete vlucas/phpdotenv).
+- Por ultimo deberas cambiar tu dominio local "localhost" por la ip "127.0.0.1" ya que te generara un error si lo dejas por defecto. 
