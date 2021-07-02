@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <meta name="author" content="Heibert Ocaña">
+  <meta name="owner" content="Heibert Ocaña">
+  <meta name="designer" content="Heibert Ocaña">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Oxygen&family=Work+Sans:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  <style>
+    .title-form {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .title-label {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .inputs {
+      font-family: 'Oxygen', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-xl mt-5 mb-4 ">
+    <form action="./Server.php" method="post" class="pt-2 pb-2 m-auto col-sm-7 border rounded">
+      <h1 class="title-form text-success">Contactanos</h1>
+      <p>
+        <small class="text-dark">Comunicate con nosotros por medio de este formulario, solamente tienes que ingresar
+          los datos que veras a
+          continuacion.</small>
+      </p>
+      <div class="form-group mb-3">
+        <label for="email" class="text-secondary title-label">Email:</label>
+        <input type="text" id="email" name="email" class="form-control inputs" placeholder="username@server.domain"
+          autocomplete="off" maxlength="100">
+      </div>
+      <div class="form-group mb-3">
+        <label for="asunto" class="text-secondary title-label">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" class="form-control inputs"
+          placeholder="Asunto | max:100 caracteres" autocomplete="off" maxlength="100">
+      </div>
+      <div class="form-group mb-3">
+        <label for="mensaje" class="text-secondary title-label">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="form-control inputs" placeholder="Mensaje | max:250 caracteres"
+          autocomplete="off" maxlength="250" style="max-height:150px; min-height:100px;"></textarea>
+      </div>
+      <div class="form-group mb-3">
+        <div class="h-captcha" data-sitekey="edb6e2b1-6dbf-45bf-ba29-8d91b16e8546"></div>
+      </div>
+      <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
